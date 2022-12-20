@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- 구글 머티리얼 아이콘 연결 -->
+  <!-- 구글에서 제공하는 머티리얼 스타일의 아이콘, 글자처럼 취급 가능한 장점 -->
+  <!-- 그 외 fontawesome, bootstrap icon 등 다양함 -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
+
+
+  <!-- 스타일 초기화: 브라우저 별로 다른 기본스타일이 적용되는 것을 초기화-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  
+
+  <!-- reset-css 링크 아래에 css 연결 -->
+  <link rel="stylesheet" href="css/main.css">
+
+
+  <!-- 슬라이드 라이브러리 Swiper.js 연결 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+</head>
+<body>
+
+  <header>
+    <!-- LOGO -->
+    <h1>
+      <a href="javascript:void(0)">
+        <img src="" alt="logo">
+      </a>
+    </h1>
+
+    <!-- 상단 btn -->
+    <div class="btn">
+      <div class="btn-login">
+        <a href="#">
+          <button class="btn-orange"></button>
+        </a>
+      </div>
+      <div class="btn-sign_up">
+        <a href="">
+          <button class="btn-green"></button>
+        </a>
+      </div>
+      <div class="btn-search"></div>
+    </div>
+
+    <!-- 메인 메뉴 -->
+    <ul class="main_menu">
+      <li>
+        <a href="javascript:void(0)">우동마켓</a>
+        <ul class="sub_menu">
+          <li><a href="javascript:void(0)">새로 등록한 마켓</a></li>
+          <li><a href="javascript:void(0)">인기 마켓</a></li>
+          <li><a href="javascript:void(0)">마켓 등록하기</a></li>
+          <li><a href="javascript:void(0)">판매자 인증하기</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="javascript:void(0)">마켓제보</a>
+        <ul class="sub_menu">
+          <li><a href="javascript:void(0)">물물교환</a></li>
+          <li><a href="javascript:void(0)">기프티콘 판매</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="javascript:void(0)">우동거래</a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">우동나눔</a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">우리동네 동네소식</a>
+        <ul class="sub_menu">
+          <li><a href="javascript:void(0">분실물 제보</a></li>
+          <li><a href="javascript:void(0">우리동네 추천</a></li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+
+
+  <main>
+    <!-- 우리동네 동네마켓(현재 내 위치) -->
+    <section class="local_market_map">
+      <h1>우리동네 동네마켓</h1>
+      <!-- 내 위치/위치 입력 -->
+      <div class="contents">
+        <div class="location">
+          <input type="text" name="" id="my_location" placeholder="내 위치 찾기">
+          <a href="">
+            <button class="btn-green"></button>
+          </a>
+        </div>
+      </div>
+
+      <!-- 내 위치 주변 등록된 마켓 목록 -->
+      <!-- 지도 상 해당 마켓 클릭/호버 시 목록에 주황색 박스-픽셀 변경 -->
+      <article class="market">
+        <div class="market__content"></div>
+        <div class="market__content"></div>
+        <div class="market__content"></div>
+      </article>
+
+      <!-- 내 위치 주변 마켓 지도 -->
+      <div class="market_map"></div>
+      
+    </section>
+
+    <!-- 우리동네 마켓등록/제보 -->
+    <section class="market_submit">
+
+      <!-- 슬라이드 -->
+      <article class="slide">
+        <div class="slide_01">
+          <div></div>
+          <div></div>
+        </div>
+        <div class="slide_02">
+          <div></div>
+          <div></div>
+        </div>
+      </article>
+
+      <!-- 등록 -->
+      <article class="submit">
+        <h1>우리동네 마켓등록</h1>
+      </article>
+
+      <!-- 제보 -->
+      <article>
+        <h1>우리동네 마켓제보</h1>
+      </article>
+    </section>
+
+    <!-- 우리동네 인기마켓 -->
+    <section class="star_market">
+
+      <!-- 슬라이드 -->
+      <article class="slide">
+        <div class="slide_03">
+          <div></div>
+          <div></div>
+        </div>
+        <div class="slide_04">
+          <div></div>
+          <div></div>
+        </div>
+      </article>
+
+      <article class="star_market">
+        <h1>우리동네 인기마켓</h1>
+        <div class="star_market__content">
+          <div class="market_content01">
+            <div class="01_image"><img src="" alt=""></div>
+            <div class="01_text"></div>
+          </div>
+          <div class="market_content02">
+            <div class="02_image"><img src="" alt=""></div>
+            <div class="02_text"></div>
+          </div>
+          <div class="market_content03">
+            <div class="03_image"><img src="" alt=""></div>
+            <div class="03_text"></div>
+          </div>
+          <div class="market_content04">
+            <div class="04_image"><img src="" alt=""></div>
+            <div class="04_text"></div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section></section>
+
+  </main>
+
+
+  <footer></footer>
+  
+</body>
+</html>
