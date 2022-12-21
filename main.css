@@ -1,0 +1,375 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+/* HEADER - top-header (header 전체 영역) */
+header > .top-header {
+  width: 100%;
+  height: 80px;
+  background-color: pink;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* HEADER - top-header (header 내부 영역) */
+header .inner {
+  width: 80%;
+  background-color: lightgrey;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around
+}
+
+/* HEADER - header-Left (header 내부 영역의 Lt) (SSS) */
+header > .top-header .header-lt {
+  background-color: aqua;
+  width: 220px;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+header > .top-header .header-lt > .btn-login .btn-orange {
+  width: 80px;
+  height: 30px;
+  color: #FFB038;
+  background-color: #fff;
+  border: 2px solid #FFB038;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+header > .top-header .header-lt > .btn-login .btn-orange > span {
+  font-size: 14px;
+}
+
+header > .top-header .header-lt > .btn-sign-up .btn-green > span {
+  font-size: 14px;
+}
+
+
+header > .top-header .header-lt > .btn-sign-up .btn-green {
+  width: 104px;
+  height: 30px;
+  color: #fff;
+  font-size: px;
+  background-color: #69CF45;
+  border: 2px solid #69CF45;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* HEADER - header-Left (header 내부 영역의 Lt) (EEE) */
+
+
+/* HEADER - header-Center (header 내부 영역 Center(logo)) */
+header > .top-header .header-center {
+  background-color: orange;
+}
+
+header > .top-header .header-center > .logo > h1 .logo {
+  width: 320px;
+}
+
+/* HEADER - header-Right (header 내부 영역의 Rt) (SSS) */
+header > .top-header .header-rt {
+  width: 220px;
+  background-color: yellowgreen;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+header > .top-header .header-rt > .btn-search > .search {
+  width: 200px;
+  height: 30px;
+  background-color: #fff;
+  border: 2px solid #FFB038;
+  border-radius: 5px;
+}
+
+header > .top-header .header-rt > .btn-search {
+  position: relative;
+}
+
+header > .top-header .header-rt > .btn-search > .material-icons {
+  color: #FFB038;
+  font-size: 28px;
+
+  position: absolute;
+  top: 3px;
+  right: 20px;
+}
+
+input::placeholder {
+  font-size: 14px;
+  color: #7A7A7A;
+}
+/* HEADER - header-Right (header 내부 영역의 Rt) (EEE) */
+
+
+
+/* HEADER - main_menu (SSS) */
+header > .main_menu {
+  width: 100%;
+  height: 45px;
+  background-color: yellow;
+
+  display: flex;
+  justify-content: center;
+}
+
+header > .main_menu > li {
+  margin: 0 50px 0 50px;
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+}
+
+/* HEADER - main_menu (EEE) */
+
+
+
+/* MAIN */
+
+main h1 {
+  font-size: 24px;
+  text-align: center;
+  padding: 50px;
+
+}
+
+/* SECTION: 우리동네 하루마켓 전체 프레임 (SSS) */
+main > .local_market_map {
+  width: 100%;
+  height: 680px;
+  background-color: skyblue;
+
+  display: flex;
+  justify-content: center;
+}
+
+main > .local_market_map > .inner {
+  width: 80%;
+  height: 680px;
+  background-color: pink;
+}
+
+/* 내 위치/위치 입력 div */
+main > .local_market_map > .inner > .container {
+  margin: 0 auto;
+  width: 1030px;
+  height: 450px;
+  background-color: lightgreen;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+  
+}
+
+/* 위치/위치 입력 묶은 DIV */
+main > .local_market_map > .inner > .container > .container-lt > .contents {
+  width: 350px;
+  height: 80px;
+  background-color: lightgray;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 내 위치 찾기 input*/
+main > .local_market_map > .inner > .container > .container-lt #my_location {
+  width: 200px;
+  height: 30px;
+  border: 2px solid #69CF45;
+  border-radius: 5px;
+}
+
+main > .local_market_map > .inner > .container > .container-lt {
+  position: relative;
+}
+
+/* material-icons LOCATION*/
+main > .local_market_map > .inner > .container > .container-lt .material-icons {
+  color: #69CF45;
+
+  position: absolute;
+  top: 5px;
+  right: 150px;
+}
+
+/* 직접 입력하기 버튼*/
+main > .local_market_map > .inner > .container > .container-lt > .contents .btn-green {
+  width: 130px;
+  height: 35.5px;
+  color: #fff;
+  font-size: 14px;
+  background-color: #69CF45;
+  border: 2px solid #69CF45;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* 내 위치 주변 등록된 마켓 목록 3개 */
+main > .local_market_map > .inner > .container > .container-lt > .market {
+  width: 350px;
+  height: 320px;
+  background-color: darkkhaki;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main > .local_market_map > .inner > .container > .container-lt .market__content_01 {
+  width: 350px;
+  height: 100px;
+
+  font-size: 14px;
+  line-height: 22px;
+
+  border: 1px solid #69CF45;
+  border-radius: 10px;
+  background-color: #fff;
+
+  box-sizing: border-box;
+  padding: 15px 10px;
+
+  position: relative;
+}
+main > .local_market_map > .inner > .container > .container-lt .market__content_02 {
+  width: 350px;
+  height: 100px;
+
+  font-size: 14px;
+  line-height: 22px;
+
+  border: 1px solid #69CF45;
+  border-radius: 10px;
+  background-color: #fff;
+
+  box-sizing: border-box;
+  padding: 15px 10px;
+
+  position: relative;
+}
+main > .local_market_map > .inner > .container > .container-lt .market__content_03 {
+  width: 350px;
+  height: 100px;
+
+  font-size: 14px;
+  line-height: 22px;
+
+  border: 1px solid #69CF45;
+  border-radius: 10px;
+  background-color: #fff;
+
+  box-sizing: border-box;
+  padding: 15px 10px;
+
+  position: relative;
+}
+
+/* material-icons */
+main > .local_market_map > .inner > .container > .container-lt > .market .material-icons {
+  font-size: 18px;
+  color: #2CAA00;
+
+  position: absolute;
+  top: 65px;
+  right: 0;
+
+  cursor: pointer;
+}
+
+
+/* 내 위치 주변 마켓 지도 */
+main > .local_market_map > .inner .market_map {
+  width: 650px;
+  height: 450px;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* background-color: orange; */
+  background-image: url(./image/main01_지도.JPG);
+  background-size: cover;
+}
+
+
+/* SECTION: 우리동네 마켓등록/제보  */
+main > .market_submit {
+  width: 100%;
+  height: 680px;
+  background-color: lightgreen
+}
+
+main > .market_submit > .slide {
+  width: 100%;
+  height: 40px;
+  background-color: yellow;
+
+  display: flex;
+}
+
+main > .market_submit .slide_01 {
+  width: 50%;
+  height: 20px;
+  background-color: orange;
+}
+
+main > .market_submit .slide_02 {
+  width: 50%;
+  height: 20px;
+  background-color: orangered
+}
+
+main > .market_submit > .submit__content {
+  width: 800px;
+  height: 400px;
+  background-color: darkturquoise;
+  display: flex;
+}
+
+main > .market_submit > .submit__content > .submit {
+  width: 300px;
+  height: 300px;
+  background-color: lightgray;
+}
+
+main > .market_submit > .submit__content > .report {
+  width: 300px;
+  height: 300px;
+  background-color: lightgray;
+}
+
+main > .star_market {
+  width: 100%;
+  height: 680px;
+  background-color: thistle;
+}
+
+main > .star_market > .slide {
+  width: 100%;
+  height: 40px;
+  background-color: yellow;
+
+  display: flex;
+}
+
+main > .star_market .slide_03 {
+  width: 50%;
+  height: 20px;
+  background-color: orange;
+}
+
+main > .star_market .slide_04 {
+  width: 50%;
+  height: 20px;
+  background-color: orangered
+}
