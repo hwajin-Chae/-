@@ -21,8 +21,12 @@
   <!-- 슬라이드 라이브러리 Swiper.js 연결 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 
   <script defer src="./youtube.js"></script>
+
+  <script defer src="./main.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
@@ -105,7 +109,7 @@
       <li>
         <a href="javascript:void(0)">우리동네 동네소식</a>
         <ul class="sub_menu">
-          <li><a href="javascript:void(0">분실물 제보</a></li>
+          <li><a href="javascript:void(0">분실물/실종 제보</a></li>
           <li><a href="javascript:void(0">우리동네 추천</a></li>
         </ul>
       </li>
@@ -176,7 +180,10 @@
   
           <!-- 내 위치 주변 마켓 지도 -->
           <div class="market_map">
-
+            <span class="material-icons" id="my_location">adjust</span>
+            <span class="material-icons" id="dot_01">fiber_manual_record</span>
+            <span class="material-icons" id="dot_02">fiber_manual_record</span>
+            <span class="material-icons" id="dot_03">fiber_manual_record</span>
           </div>
           
         </div>
@@ -193,14 +200,60 @@
 
       <!-- 슬라이드바 -->
       <article class="slide">
-        <div class="slide_01">
-          <div></div>
-          <div></div>
+
+        <div class="slide_left">
+          <!-- Lt 슬라이드 고정 -->
+          <div class="left_01">새로 등록된 하루마켓</div>
+
+          <!-- Lt 슬라이드 (SSS) -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  위치: 남동구 문화서로 62
+                  종류: 자전거 수리</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  위치: 중구 인항로 27 인하대병원 앞
+                  종류: 간식거리-타코야끼</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  위치: 미추홀구 매소홀로 340 풍림아이원아파트 정문
+                  종류: 식품-과일/야채</a>
+              </div>
+            </div>
+          </div>
+          <!-- Lt 슬라이드 (EEE) -->
         </div>
-        <div class="slide_02">
-          <div></div>
-          <div></div>
+
+
+        <div class="slide_right">
+          <!-- Rt 슬라이드 고정 -->
+          <div class="right_01">믿을 수 있는 우동거래</div>
+
+          <!-- Rt 슬라이드 (EEE) -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  이그린: 스타벅스 라떼 기프티콘 3천원에 판매합니다.</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  김그린: FastCampus 프론트엔드 개발 교재 만원에 판매합니다.</a>
+              </div>
+            </div>
+          </div>
+          <!-- Rt 슬라이드 (SSS) -->
         </div>
+        
+        
+
+
       </article>
       <!-- 슬라이드바 -->
 
@@ -269,7 +322,7 @@
 
 
     <!-- SECTION: 우리동네 인기마켓 (SSS) -->
-    <section class="star_market">
+    <section class="local_star_market">
 
       <!-- 슬라이드바 -->
       <article class="slide">
@@ -287,24 +340,30 @@
       <!-- 인기마켓 -->
       <article class="star_market">
         <h1>우리동네 인기마켓</h1>
-        <div class="star_market__content">
-          <div class="market_content01">
-            <div class="01_image"><img src="" alt=""></div>
-            <div class="01_text"></div>
+
+        <div class="inner">
+
+          <div class="star_market__content">
+            <div class="market_content01">
+              <div class="01_image"><img src="" alt=""></div>
+              <div class="01_text"></div>
+            </div>
+            <div class="market_content02">
+              <div class="02_image"><img src="" alt=""></div>
+              <div class="02_text"></div>
+            </div>
+            <div class="market_content03">
+              <div class="03_image"><img src="" alt=""></div>
+              <div class="03_text"></div>
+            </div>
+            <div class="market_content04">
+              <div class="04_image"><img src="" alt=""></div>
+              <div class="04_text"></div>
+            </div>
           </div>
-          <div class="market_content02">
-            <div class="02_image"><img src="" alt=""></div>
-            <div class="02_text"></div>
-          </div>
-          <div class="market_content03">
-            <div class="03_image"><img src="" alt=""></div>
-            <div class="03_text"></div>
-          </div>
-          <div class="market_content04">
-            <div class="04_image"><img src="" alt=""></div>
-            <div class="04_text"></div>
-          </div>
+
         </div>
+        
       </article>
       <!-- 인기마켓 -->
     </section>
