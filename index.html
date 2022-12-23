@@ -9,53 +9,41 @@
   <!-- 구글 머티리얼 아이콘 연결 -->
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 
+  <!-- reset-css 링크 아래에 css 연결 -->
+  <link rel="stylesheet" href="./CSS/main.css">
 
   <!-- 스타일 초기화: 브라우저 별로 다른 기본스타일이 적용되는 것을 초기화-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-  
-
-  <!-- reset-css 링크 아래에 css 연결 -->
-  <link rel="stylesheet" href="./main.css">
-
 
   <!-- 슬라이드 라이브러리 Swiper.js 연결 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
+  <script defer src="./JS/youtube.js"></script>
 
-  <script defer src="./youtube.js"></script>
-
-  <script defer src="./main.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script defer src="./JS/main.js"></script>
 
 
 </head>
 <body>
-
   <!-- header (SSS) -->
   <header>
-
     <div class="top-header">
-
       <!-- inner DIV (SSS) -->
       <div class="inner">
-
         <div class="header-lt">
           <div class="btn-login">
             <a href="#">
               <button class="btn-orange"><span>회원가입</span></button>
             </a>
           </div>
-
           <div class="btn-sign-up">
             <a href="#">
               <button class="btn-green"><span>마켓 들어가기</span></button>
             </a>
           </div>
         </div>
-
         <div class="header-center">
           <div class="logo">
             <h1>
@@ -72,63 +60,98 @@
             <span class="material-icons">search</span>
           </div>
         </div>
-      
       </div>
       <!-- inner DIV (EEE) -->
-
     </div>
     <!-- top header DIV (EEE) -->
     
-    
 
     <!-- 메인 메뉴 -->
+    <nav class="gnb">
+      <ul class="main-menu">
+        <li>
+          <a href="javascript:void(0)">하루마켓</a>
+          <ul class="sub-menu">
+            <li><a href="javascript:void(0)">새로 등록한 마켓</a></li>
+            <li><a href="javascript:void(0)">인기 마켓</a></li>
+            <li><a href="javascript:void(0)">마켓 등록하기</a></li>
+            <li><a href="javascript:void(0)">판매자 인증하기</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="javascript:void(0)">마켓제보</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">우동거래</a>
+          <ul class="sub-menu">
+            <li><a href="javascript:void(0)">안심마켓</a></li>
+            <li><a href="javascript:void(0)">물물교환</a></li>
+            <li><a href="javascript:void(0)">기프티콘 판매</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="javascript:void(0)">우동나눔</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">우리동네 동네소식</a>
+          <ul class="sub-menu">
+            <li><a href="javascript:void(0)">분실물/실종</a></li>
+            <li><a href="javascript:void(0)">사건/사고</a></li>
+            <li><a href="javascript:void(0)">우동추천</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
     
-    <ul class="main_menu">
-      <li>
+    <!-- 메인 메뉴 -->
+    <!-- <ul class="main_menu">
+      <li class="item">
         <a href="javascript:void(0)">하루마켓</a>
-        <ul class="sub_menu">
-          <li><a href="javascript:void(0)">새로 등록한 마켓</a></li>
-          <li><a href="javascript:void(0)">인기 마켓</a></li>
-          <li><a href="javascript:void(0)">마켓 등록하기</a></li>
-          <li><a href="javascript:void(0)">판매자 인증하기</a></li>
-        </ul>
+        <div class="menu__content">
+          <ul class="sub_menu">
+            <li><a href="javascript:void(0)">새로 등록한 마켓</a></li>
+            <li><a href="javascript:void(0)">인기 마켓</a></li>
+            <li><a href="javascript:void(0)">마켓 등록하기</a></li>
+            <li><a href="javascript:void(0)">판매자 인증하기</a></li>
+          </ul>
+        </div>  
       </li>
-      <li>
+      <li class="item">
         <a href="javascript:void(0)">마켓제보</a>
       </li>
-      <li>
+      <li class="item">
         <a href="javascript:void(0)">우동거래</a>
-        <ul class="sub_menu">
-          <li><a href="javascript:void(0)">물물교환</a></li>
-          <li><a href="javascript:void(0)">기프티콘 판매</a></l>
-        </ul>
+        <div class="menu__content">
+          <ul class="sub_menu">
+            <li><a href="javascript:void(0)">물물교환</a></li>
+            <li><a href="javascript:void(0)">기프티콘 판매</a></l>
+          </ul>
+        </div>
       </li>
-      <li>
+      <li class="item">
         <a href="javascript:void(0)">우동나눔</a>
       </li>
-      <li>
+      <li class="item">
         <a href="javascript:void(0)">우리동네 동네소식</a>
-        <ul class="sub_menu">
-          <li><a href="javascript:void(0">분실물/실종 제보</a></li>
-          <li><a href="javascript:void(0">우리동네 추천</a></li>
-        </ul>
+        <div class="menu__content">
+          <ul class="sub_menu">
+            <li><a href="javascript:void(0)">분실물/실종 제보</a></li>
+            <li><a href="javascript:void(0)">우리동네 추천</a></li>
+          </ul>
+        </div>
       </li>
-    </ul>
-
-    
+    </ul> -->
   </header>
   <!-- header (EEE) -->
 
 
   <!-- main (SSS) -->
   <main>
-
     <!-- SECTION: 우리동네 하루마켓(현재 내 위치) (SSS) -->
     <section class="local_market_map">
 
       <div class="inner">
         <h1>우리동네 하루마켓</h1>
-
         <!-- container DIV (SSS) -->
         <div class="container">
 
@@ -145,10 +168,9 @@
             <!-- 내 위치/위치 입력 (EEE) -->
     
     
-            <!-- 내 위치 주변 등록된 마켓 목록 3개 -->
+            <!-- 내 위치 주변 등록된 마켓 목록 3개 (SSS)-->
             <!-- 지도 상 해당 마켓 클릭/호버 시 목록에 주황색 박스-픽셀 변경 -->
             <article class="market">
-
               <div class="market__content_01">
                 <span>위치: 구월동 문화로 145번길 건설회관 앞
                   <br>종류: 간식거리-붕어빵
@@ -156,7 +178,6 @@
                 </span>
                 <span class="material-icons">more_vert</span>
               </div>
-
               <div class="market__content_02">
                 <span>위치: 구월동 문화로 133번길 LX공사 주차장 앞
                   <br>종류: 간식거리-타코야끼
@@ -164,7 +185,6 @@
                 </span>
                 <span class="material-icons">more_vert</span>
               </div>
-
               <div class="market__content_03">
                 <span>위치: 구월동 인주대로 551번길 해비치빌 앞
                   <br>종류: 식품-과일 및 야채-귤/사과/양파
@@ -172,11 +192,10 @@
                 </span>
                 <span class="material-icons">more_vert</span>
               </div>
-
             </article>
-
+            <!-- 내 위치 주변 등록된 마켓 목록 3개 (EEE)-->
           </div>
-          <!-- container-Rt DIV (EEE) -->
+          <!-- container-Lt DIV (EEE) -->
   
           <!-- 내 위치 주변 마켓 지도 -->
           <div class="market_map">
@@ -185,84 +204,69 @@
             <span class="material-icons" id="dot_02">fiber_manual_record</span>
             <span class="material-icons" id="dot_03">fiber_manual_record</span>
           </div>
-          
         </div>
         <!-- container DIV (EEE) -->
-      
+      </div>
     </section>
     <!-- SECTION: 우리동네 동네마켓(현재 내 위치) (EEE) -->
-      </div>
-
-      
 
     <!-- SECTION: 우리동네 마켓등록/제보 (SSS)-->
     <section class="market_submit">
-
       <!-- 슬라이드바 -->
       <article class="slide">
-
         <div class="slide_left">
           <!-- Lt 슬라이드 고정 -->
           <div class="left_01">새로 등록된 하루마켓</div>
-
-          <!-- Lt 슬라이드 (SSS) -->
+          <!-- Lt swiper (SSS) -->
           <div class="swiper">
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
                 <a href="javascript:void(0)">
-                  위치: 남동구 문화서로 62
-                  종류: 자전거 수리</a>
+                  [위치] 남동구 문화서로 62
+                  [종류] 자전거 수리</a>
               </div>
               <div class="swiper-slide">
                 <a href="javascript:void(0)">
-                  위치: 중구 인항로 27 인하대병원 앞
-                  종류: 간식거리-타코야끼</a>
+                  [위치] 중구 인항로 27 인하대병원 앞
+                  [종류] 간식거리-타코야끼</a>
               </div>
               <div class="swiper-slide">
                 <a href="javascript:void(0)">
-                  위치: 미추홀구 매소홀로 340 풍림아이원아파트 정문
-                  종류: 식품-과일/야채</a>
+                  [위치] 미추홀구 매소홀로 340 풍림아이원아파트 정문
+                  [종류] 식품-과일/야채</a>
               </div>
             </div>
           </div>
-          <!-- Lt 슬라이드 (EEE) -->
+          <!-- Lt swiper (EEE) -->
         </div>
-
 
         <div class="slide_right">
           <!-- Rt 슬라이드 고정 -->
           <div class="right_01">믿을 수 있는 우동거래</div>
-
-          <!-- Rt 슬라이드 (EEE) -->
+          <!-- Rt swiper (SSS) -->
           <div class="swiper">
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
                 <a href="javascript:void(0)">
-                  이그린: 스타벅스 라떼 기프티콘 3천원에 판매합니다.</a>
+                  [이그린] 스타벅스 라떼 기프티콘 3천원에 판매합니다.</a>
               </div>
               <div class="swiper-slide">
                 <a href="javascript:void(0)">
-                  김그린: FastCampus 프론트엔드 개발 교재 만원에 판매합니다.</a>
+                  [김그린] FastCampus 프론트엔드 개발 교재 만원에 판매합니다.</a>
               </div>
             </div>
           </div>
-          <!-- Rt 슬라이드 (SSS) -->
+          <!-- Rt swiper (EEE) -->
         </div>
-        
-        
-
-
       </article>
       <!-- 슬라이드바 -->
 
       <!-- 등록 및 제보 -->
-      
       <!-- flex 정렬을 위한 내부 inner-->
       <section class="inner">
-
-        <!-- 유투브 영역 -->
+        <!-- 유튜브 영역 -->
         <article class="youtube">
           <!-- 영상이 출력될 영역 -->
           <div class="youtube__area">
@@ -271,11 +275,9 @@
           </div>
         </article>
 
-
         <!-- 제보 -->
         <article class="report">
           <h1>우리동네 하루마켓 제보</h1>
-          
           <!-- 제목 및 콘텐츠 영역 (SSS) -->
           <section class="submit__contents">
             <!-- 판매 종류 -->
@@ -296,54 +298,95 @@
                 <option value="product_10">기타</option>
               </select>
               <input type="text" class="product__content_etc" placeholder="직접 입력하기">
-
               <span class="material-icons">add</span>
             </div>
-
             <!-- 위치 등록 -->
             <div class="content_02">
               <button class="btn-green"><b>위치 등록</b></button>
               <input type="text" class="location" placeholder="내 위치 찾기">
               <span class="material-icons">pin_drop</span>
             </div>
-
             <div class="content_submit">
               <button class="btn-orange">등록하기</button>
             </div>
           </section>
           <!-- 제목 및 콘텐츠 영역 (EEE) -->
         </article>
-      
       </section>
       <!-- 등록 및 제보 -->
-    
-    
     </section>
     <!-- SECTION: 우리동네 마켓등록/제보 (EEE)-->
 
 
     <!-- SECTION: 우리동네 인기마켓 (SSS) -->
     <section class="local_star_market">
-
-      <!-- 슬라이드바 -->
       <article class="slide">
-        <div class="slide_03">
-          <div></div>
-          <div></div>
+        <div class="slide_left">
+          <!-- Lt 슬라이드 고정 -->
+          <div class="left_03">우리동네 동네소식</div>
+          <!-- Lt swiper (SSS) -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  [위치] 수인선 인하대역 승강장
+                  [분실] 지갑 분실물 인하대역에 보관 중</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  [인천소방본부-미추홀소방서]
+                  [화재1건ㅣ구조 12건ㅣ구급 80건]</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  [위치] 경인고속도로 서운분기점
+                  [공사] 도로 공사로 차량 정체</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  [위치] 미추홀구 수봉공원 입구
+                  [사고] 빙판길 사고로 어린이 1명 부상</a>
+              </div>
+            </div>
+          </div>
+          <!-- Lt swiper (EEE) -->
         </div>
-        <div class="slide_04">
-          <div></div>
-          <div></div>
+
+        <div class="slide_right">
+          <!-- Rt 슬라이드 고정 -->
+          <div class="right_04">하루마켓 소식</div>
+          <!-- Rt swiper (SSS) -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  [봉사] 우리동네의 자원봉사자를 모집합니다.</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  [인터뷰] 붕어빵 아저씨 최그린님, 하루마켓 이후 최고 매출 ..</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  [이벤트] 하루마켓 10일 출석 시, 포인트 지급</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">
+                  [인터뷰] 우리동네주민 박그린님, 나눔으로 이웃과 사랑을 나눠 ..</a>
+              </div>
+            </div>
+          </div>
+          <!-- Rt swiper (EEE) -->
         </div>
       </article>
       <!-- 슬라이드바 -->
 
-
       <!-- 인기마켓 -->
       <article class="star_market">
-
+        <!-- inner DIV (SSS) -->
         <div class="inner">
-
           <section class="volunteer">
             <div>
               <h1>volunteer</h1>
@@ -358,19 +401,18 @@
               <h1>ㅐ</h1>
             </div>
           </section>
-
         </div>
-        
+        <!-- inner DIV (EEE) -->
       </article>
       <!-- 인기마켓 -->
     </section>
+    <!-- SECTION: 우리동네 인기마켓 (EEE) -->
 
     <section class="evnet">
       
     </section>
 
   </main>
-
 
   <footer></footer>
   
