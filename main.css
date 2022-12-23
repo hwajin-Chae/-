@@ -101,8 +101,8 @@ header > .top-header .header-rt > .btn-search > .material-icons {
   font-size: 28px;
 
   position: absolute;
-  top: 3px;
-  right: 20px;
+  top: 4px;
+  right: 10px;
 }
 
 input::placeholder {
@@ -126,11 +126,20 @@ header > .main_menu {
 }
 
 header > .main_menu > li > a {
+  font-family: 'TTCrownMychewR';
+
   margin: 13px 50px 0 50px;
-  font-size: 18px;
+  font-size: 20px;
   color: #000;
   text-decoration: none;
   display: block;
+}
+
+@font-face {
+  font-family: 'TTCrownMychewR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/TTCrownMychewR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
 header > .main_menu > li > a:hover {
@@ -212,6 +221,8 @@ main > .local_market_map > .inner > .container > .container-lt > .contents {
 main > .local_market_map > .inner > .container > .container-lt #my_location {
   width: 200px;
   height: 30px;
+
+  padding: 0 0 0 8px;
   border: 2px solid #69CF45;
   border-radius: 5px;
 }
@@ -380,7 +391,7 @@ main > .market_submit {
   background-color: lightgreen;
 }
 
-/* ************************ 슬 라 이 드 ************************* */
+/* ******************************* 슬 라 이 드 ***************************** */
 
 main > .market_submit > .slide {
   width: 100%;
@@ -403,11 +414,17 @@ main > .market_submit .slide_left {
 main > .market_submit .slide_left > .left_01 {
   background-color: skyblue;
   text-align: center;
+
+  font-size: 12px;
+  line-height: 16px;
 }
 
 main > .market_submit .slide_right > .right_01 {
   background-color: skyblue;
   text-align: center;
+
+  font-size: 12px;
+  line-height: 16px;
 }
 
 
@@ -420,7 +437,7 @@ main > .market_submit .slide_right {
   background-color: orangered
 }
 
-/* ********************************************************* */
+/* ***************************** 슬 라 이 드 ************************** */
 
 main section.inner {
   width: 80%;
@@ -434,12 +451,12 @@ main section.inner {
 }
 
 main section.inner > .youtube {
-  width: 50%;
+  width: 60%;
   /* height: 680px; */
   background-color: cyan;
 }
 
-/* **************************************** */
+/* ******************** youtube ******************** */
 
 
 .youtube {
@@ -491,9 +508,9 @@ main section.inner > .youtube {
   background-image: url(../images/video_cover_pattern.png);
 }
 
+/* ********************* youtube ******************* */
 
 
-/* **************************************** */
 
 main .inner .submit__contents .btn-green {
   width: 100px;
@@ -506,8 +523,9 @@ main .inner .submit__contents .btn-green {
   border-radius: 5px;
 }
 
+/* 하루마켓 제보 큰 콘텐츠 영역 */
 main .inner > .report {
-  width: 50%;
+  width: 45%;
   height: 500px;
   background-color: azure;
 
@@ -529,6 +547,10 @@ main .inner .submit__contents .product__content {
   width: 100px;
   height: 32px;
 
+  font-size: 14px;
+  padding: 0 0 0 8px;
+  color: #363636;
+
   border: 1px solid #69CF45;
   border-radius: 5px;
 }
@@ -544,7 +566,7 @@ main .inner .submit__contents .product__content_etc {
   box-sizing: border-box;
 }
 
-main .inner .submit__contents .material-icons {
+main .inner .submit__contents > .content_01 > .material-icons {
   color: #575757;
   font-weight: 700;
 
@@ -566,11 +588,26 @@ main .inner .submit__contents .location {
   box-sizing: border-box;
 }
 
+main .inner .submit__contents > .content_02 {
+  position: relative;
+}
+
+main .inner .submit__contents > .content_02 > span.material-icons {
+  color: #69CF45;
+  font-size: 22px;
+
+  position: absolute;
+  top: 5px;
+  right: 220px;
+}
+
 main .inner .submit__contents .btn-orange {
   width: 100px;
-  height: 40px;
+  height: 38px;
 
   color: #fff;
+  font-weight: 700;
+
   background-color: #FFB038;
   border: 1px solid #FFB038;
   border-radius: 5px;
@@ -583,13 +620,19 @@ main .inner .submit__contents .btn-orange {
 }
 
 
+main > .local_start_market {
+  width: 100%;
+  height: 680px;
+
+  background-color: orange;
+}
 
 
 /* MAIN- 인기 마켓 */
 main > .local_star_market {
   width: 100%;
   height: 680px;
-  background-color: thistle;
+  background-color: burlywood;
 }
 
 main > .local_star_market > .slide {
@@ -614,8 +657,24 @@ main > .local_star_market .slide_04 {
 
 main > .local_star_market > .star_market > .inner {
   width: 80%;
-  height: 450px;
+  height: 500px;
 
   margin: 0 auto;
   background-color: pink;
+
+  display: flex;
+}
+
+main > .local_star_market > .star_market > .inner > .volunteer {
+  width: 45%;
+  height: 500px;
+
+  background-color: lightgray;
+}
+
+main > .local_star_market > .star_market > .inner > .star_market {
+  width: 55%;
+  height: 500px;
+
+  background-color: cadetblue;
 }
