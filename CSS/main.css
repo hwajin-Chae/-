@@ -42,6 +42,13 @@ header > .top-header .header-lt > .btn-login .btn-orange {
   margin-right: 10px;
 }
 
+header > .top-header .header-lt > .btn-login .btn-orange:hover {
+  background-color: #FFB038;
+  color: #fff;
+  font-weight: 700;
+}
+
+
 header > .top-header .header-lt > .btn-login .btn-orange > span {
   font-size: 14px;
 }
@@ -54,12 +61,19 @@ header > .top-header .header-lt > .btn-sign-up .btn-green {
   width: 104px;
   height: 30px;
   color: #fff;
-  font-size: px;
+  /* font-weight: 700; */
   background-color: #69CF45;
   border: 2px solid #69CF45;
   border-radius: 5px;
   cursor: pointer;
 }
+
+header > .top-header .header-lt > .btn-sign-up .btn-green:hover {
+  color: #69CF45;
+  font-weight: 700;
+  background-color: #fff;
+}
+
 /* HEADER - header-Left (header 내부 영역의 Lt) (EEE) */
 
 /* HEADER - header-Center (header 내부 영역 Center(logo)) */
@@ -117,7 +131,6 @@ header > .gnb {
 
 header > .gnb > .main-menu {
   display: flex;
-
   text-align: center;
 }
 header > .gnb > .main-menu a {
@@ -144,10 +157,8 @@ header .sub-menu {
   width: 100%;
   text-align: center;
   z-index: 1; 
+  visibility: hidden;
 }
-
-
-
 
 /* HEADER - main_menu (EEE) */
 
@@ -161,7 +172,7 @@ main h1 {
 /* SECTION: 우리동네 하루마켓 전체 프레임 (SSS) */
 main > .local_market_map {
   width: 100%;
-  height: 680px;
+  height: 700px;
   background-color: azure;
   display: flex;
   justify-content: center;
@@ -169,18 +180,21 @@ main > .local_market_map {
 
 main > .local_market_map > .inner {
   width: 1200px;
-  height: px;
+  height: 680px;
   /* background-color: pink; */
+  display: flex;
+  flex-direction: column;
 }
 
 /* 내 위치/위치 입력 div */
 main > .local_market_map > .inner > .container {
   margin: 0 auto;
-  width: 1030px;
+  width: 1050px;
   height: 450px;
+  margin-top: -120px;
   background-color: lightgreen;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 /* 위치/위치 입력 묶은 DIV */
@@ -340,18 +354,19 @@ main > .market_submit {
 
 /* ******************************* 슬 라 이 드 ***************************** */
 main > .market_submit > .slide {
-  width: 100%;
+  width: 1400px;
   height: 40px;
-  /* background-color: yellow; */
+  background-color: #fff;
   display: flex;
-  justify-content: center;
+  margin: 0 auto;
 }
 
 main > .market_submit .slide_left {
   width: 700px;
   height: 40px;
-  border: 1px solid #FFB038;
-  border-radius: 5px;
+  border-top: 1px solid #FFB038;
+  border-bottom: 1px solid #FFB038;
+
 }
 
 main > .market_submit .slide_left > .left_01 {
@@ -372,8 +387,8 @@ main > .market_submit .slide_left > .swiper .swiper-slide > a {
 main > .market_submit .slide_right {
   width: 700px;
   height: 40px;
-  border: 1px solid #FFB038;
-  border-radius: 5px;
+  border-top: 1px solid #FFB038;
+  border-bottom: 1px solid #FFB038;
   /* background-color: orangered; */
 }
 main > .market_submit .slide_right > .right_01 {
@@ -396,7 +411,7 @@ main > .market_submit .slide_right > .swiper .swiper-slide > a {
 main section.inner {
   width: 1200px;
   /* height: 680px; */
-  /* background-color: pink; */
+  background-color: pink;
   margin: 0 auto;
   margin-top: 60px;
   display: flex;
@@ -410,29 +425,10 @@ main section.inner > .youtube {
 /* ******************** youtube ******************** */
 .youtube {
   position: relative;
-  /* height: 680px; */
-  /* 영상 출력 넘치는 부분 숨기기 */
   overflow: hidden;
 }
 
-/* .youtube .youtube__area {
-  --width: 1920px;
-  --height: 1080px;
-
-  position: absolute;
-
-  left: 50%;
-  top: 50%;
-
-  width: var(--width);
-  height: var(--height);
-
-  margin-left: calc(var(--width) / -2);
-  margin-top: calc(var(--height) / -2);
-} */
-
 #player {
-  /* 부모 영역에 가득 차도록 지정 */
   width: 100%;
   height: 100%;
   position: absolute;
@@ -452,7 +448,7 @@ main .inner .submit__contents .btn-green {
 
 /* 하루마켓 제보 큰 콘텐츠 영역 */
 main .inner > .report {
-  width: 45%;
+  width: 550px;
   height: 500px;
   /* background-color: azure; */
   display: flex;
@@ -540,23 +536,23 @@ main > .local_start_market {
 /* MAIN- 인기 마켓 */
 main > .local_star_market {
   width: 100%;
-  height: 680px;
+  height: 750px;
   background-color: #FAFAD2;
 }
 
 main > .local_star_market > .slide {
-  width: 100%;
+  width: 1400px;
   height: 40px;
-  /* background-color: yellow; */
+  background-color: #fff;
   display: flex;
-  justify-content: center;
+  margin: 0 auto;
 }
 
 main > .local_star_market .slide_left {
   width: 700px;
   height: 40px;
-  border: 1px solid #FFB038;
-  border-radius: 5px;
+  border-top: 1px solid #FFB038;
+  border-bottom: 1px solid #FFB038;
   /* background-color: orange; */
 }
 
@@ -578,8 +574,8 @@ main > .local_star_market .slide_left > .swiper .swiper-slide > a {
 main > .local_star_market .slide_right {
   width: 700px;
   height: 40px;
-  border: 1px solid #FFB038;
-  border-radius: 5px;
+  border-top: 1px solid #FFB038;
+  border-bottom: 1px solid #FFB038;;
   /* background-color: orangered; */
 }
 main > .local_star_market .slide_right > .right_04 {
@@ -599,22 +595,48 @@ main > .local_star_market .slide_right > .swiper .swiper-slide > a {
 }
 
 main > .local_star_market > .star_market > .inner {
-  width: 1200px;
-  height: 500px;
+  width: 1300px;
+  height: 550px;
   margin: 0 auto;
   margin-top: 60px;
   background-color: pink;
   display: flex;
 }
 
-main > .local_star_market > .star_market > .inner > .volunteer {
-  width: 45%;
+main > .local_star_market > .star_market > .inner > .character {
+  width: 300px;
   height: 500px;
   background-color: lightgray;
 }
 
+main > .local_star_market > .star_market > .inner > .character > img {
+  width: 300px;
+}
+
 main > .local_star_market > .star_market > .inner > .star_market {
-  width: 55%;
-  height: 200px;
+  width: 1200px;
+  height: 480px;
   background-color: cadetblue;
+
+  display: flex;
+}
+
+main > .local_star_market > .star_market > .inner > .star_market > .swiper div.swiper-slide {
+  width: 300px;
+  height: 350px;
+  background-color: #fff;
+  border: 1px solid red;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+main > .local_star_market > .star_market > .inner > .star_market > .swiper div.swiper-slide .star__content {
+  width: 300px;
+  height: 200px;
+  background-color: #ccc;
+}
+
+main > .local_star_market > .star_market > .inner > .star_market > .swiper div.swiper-slide .star__content > img {
+  width: 300px;
+  height: 200px;
 }
