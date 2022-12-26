@@ -59,6 +59,6 @@ const headerEl = document.querySelector('header');
       direction: 'horizontal',  // 수평 슬라이드
       loop: true,  // 반복 재생 여부
       autoplay: true,  // 자동 재생 여부
-      slidesPerView: 3,
+      slidesPerView: 3.5,
       spaceBetween: 20,
     });

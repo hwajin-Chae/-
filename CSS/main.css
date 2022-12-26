@@ -6,7 +6,7 @@ body {
 /* HEADER - top-header (header 전체 영역) */
 header > .top-header {
   width: 100%;
-  height: 80px;
+  height: 120px;
   /* background-color: pink; */
   display: flex;
   flex-direction: row;
@@ -78,7 +78,9 @@ header > .top-header .header-lt > .btn-sign-up .btn-green:hover {
 
 /* HEADER - header-Center (header 내부 영역 Center(logo)) */
 header > .top-header .header-center {
-  background-color: orange;
+  /* background-color: orange; */
+  display: flex;
+  align-items: flex-end;
 }
 
 header > .top-header .header-center > .logo > h1 .logo {
@@ -90,7 +92,7 @@ header > .top-header .header-rt {
   width: 220px;
   /* background-color: yellowgreen; */
   display: flex;
-  align-items: flex-end;
+  flex-direction: column-reverse;
 }
 
 header > .top-header .header-rt > .btn-search > .search {
@@ -111,6 +113,16 @@ header > .top-header .header-rt > .btn-search > .material-icons {
   position: absolute;
   top: 4px;
   right: 10px;
+}
+header > .top-header .header-rt > .search_image {
+  position: relative;
+}
+
+header > .top-header .header-rt img {
+  width: 130px;
+  position: absolute;
+  left: 20px;
+  bottom: -10px;
 }
 
 input::placeholder {
@@ -192,7 +204,7 @@ main > .local_market_map > .inner > .container {
   width: 1050px;
   height: 450px;
   margin-top: -120px;
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   display: flex;
   justify-content: space-around;
 }
@@ -349,7 +361,7 @@ main > .local_market_map > .inner .market_map > .material-icons:hover {
 main > .market_submit {
   width: 100%;
   height: 680px;
-  background-color: #FFF0F0;
+  background-color: #FBF3F1;
 }
 
 /* ******************************* 슬 라 이 드 ***************************** */
@@ -411,7 +423,7 @@ main > .market_submit .slide_right > .swiper .swiper-slide > a {
 main section.inner {
   width: 1200px;
   /* height: 680px; */
-  background-color: pink;
+  /* background-color: pink; */
   margin: 0 auto;
   margin-top: 60px;
   display: flex;
@@ -527,6 +539,21 @@ main .inner .submit__contents .btn-orange {
   cursor: pointer;
 }
 
+main .inner .submit__contents .btn-orange:hover {
+  background-color: #fff;
+  color: #FFB038;
+  font-weight: 700;
+  border: 2px solid #FFB038;
+}
+
+main .inner .submit__contents > .submit_image > img {
+  width: 500px;
+  
+  position: absolute;
+  bottom: -85px;
+  opacity: 0.7;
+}
+
 main > .local_start_market {
   width: 100%;
   height: 680px;
@@ -536,7 +563,7 @@ main > .local_start_market {
 /* MAIN- 인기 마켓 */
 main > .local_star_market {
   width: 100%;
-  height: 750px;
+  height: 800px;
   background-color: #FAFAD2;
 }
 
@@ -596,47 +623,114 @@ main > .local_star_market .slide_right > .swiper .swiper-slide > a {
 
 main > .local_star_market > .star_market > .inner {
   width: 1300px;
-  height: 550px;
+  height: 600px;
   margin: 0 auto;
-  margin-top: 60px;
-  background-color: pink;
+  margin-top: 90px;
+  /* background-color: pink; */
   display: flex;
+  position: relative;
 }
 
 main > .local_star_market > .star_market > .inner > .character {
-  width: 300px;
+  width: 250px;
   height: 500px;
-  background-color: lightgray;
+  /* background-color: lightgray; */
+
+  position: absolute;
+  left: -60px;
 }
 
 main > .local_star_market > .star_market > .inner > .character > img {
   width: 300px;
+
+  z-index: 1;
+  position: absolute;
+  margin-bottom: 10px;
 }
 
-main > .local_star_market > .star_market > .inner > .star_market {
-  width: 1200px;
-  height: 480px;
-  background-color: cadetblue;
-
-  display: flex;
+main > .local_star_market > .star_market > .inner > .star_market__contents {
+  width: 1000px;
+  height: 600px;
+  /* background-color: cadetblue; */
 }
 
-main > .local_star_market > .star_market > .inner > .star_market > .swiper div.swiper-slide {
+main > .local_star_market > .star_market > .inner > .star_market__contents > .swiper div.swiper-slide {
   width: 300px;
   height: 350px;
   background-color: #fff;
-  border: 1px solid red;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 4px 4px 10px 0 rgba(255, 138, 4, 0.2);
 }
 
-main > .local_star_market > .star_market > .inner > .star_market > .swiper div.swiper-slide .star__content {
+main > .local_star_market > .star_market > .inner > .star_market__contents > .swiper div.swiper-slide:hover {
+  border: 1px solid #2CAA00;
+  box-sizing: border-box;
+}
+
+main > .local_star_market > .star_market > .inner > .star_market__contents > .swiper div.swiper-slide .star__content {
   width: 300px;
   height: 200px;
   background-color: #ccc;
 }
 
-main > .local_star_market > .star_market > .inner > .star_market > .swiper div.swiper-slide .star__content > img {
+main > .local_star_market > .star_market > .inner > .star_market__contents > .swiper div.swiper-slide .star__content > img {
   width: 300px;
   height: 200px;
+}
+
+main > .local_star_market > .star_market > .inner > .star_market__contents > .swiper div.swiper-slide > a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+main > .local_star_market > .star_market > .inner > .star_market__contents > .swiper div.swiper-slide .star__content_text  {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+footer {
+  width: 100%;
+  height: 400px;
+  background-color: #ccc;
+}
+
+footer > .inner {
+  width: 1200px;
+  height: 400px;
+  background-color: pink;
+  margin: 0 auto;
+}
+
+footer .top {
+  width: 600px;
+  height: 60px;
+  background-color: yellow;
+  display: flex;
+}
+
+footer .top > .icons {
+  display: flex;
+}
+
+footer .top .icon {
+  width: 44px;
+  height: 44px;
+  background-color: skyblue;
+  border: 1px solid blue;
+  border-radius: 25px;
+}
+
+footer .top > .apps {
+  display: flex;
+}
+
+footer .top .app {
+  width: 120px;
+  height: 44px;
+  background-color: skyblue;
+  border: 1px solid blue;
+  border-radius: 5px;
 }
