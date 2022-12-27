@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>우리동네 하루마켓</title>
+
+  <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
 
   <!-- 구글 머티리얼 아이콘 연결 -->
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
@@ -59,7 +61,7 @@
             <img src="./image/main08_당근이.png" alt="">
           </div>
           <div class="btn-search">
-            <input type="text" class="search" placeholder="위치 및 마켓검색">
+            <input type="text" class="search" placeholder="위치 및 마켓 검색">
             <span class="material-icons">search</span>
           </div>
           
@@ -106,7 +108,7 @@
         </li>
       </ul>
     </nav>
-
+  </header>
   <!-- main (SSS) -->
   <main>
     <!-- SECTION: 우리동네 하루마켓(현재 내 위치) (SSS) -->
@@ -121,7 +123,7 @@
           <div class="container-lt">
             <!-- 내 위치/위치 입력 div -->
             <div class="contents">
-              <input type="text" name="" id="my_location" placeholder="내 위치 찾기">
+              <input type="text" name="mylocation" id="my_location" placeholder="내 위치 찾기">
               <span class="material-icons">pin_drop</span>
               <a href="">
                 <button class="btn-green">직접 입력하기</button>
@@ -454,32 +456,71 @@
     <div class="inner">
       <section class="top">
         <article class="icons">
-          <div class="icon">
-            <img src="" alt="instagram" class="icon_instagram">
-          </div>
-          <div class="icon">
-            <img src="" alt="facebook" class="icon_facebook">
-          </div>
-          <div class="icon">
-            <img src="" alt="youtube" class="youtube">
-          </div>
+          <a href="javascript:void(0)">
+            <div class="icon">
+              <img src="./image/social_insta.JPG" alt="instagram" class="icon_instagram">
+            </div>
+          </a>
+          <a href="javascript:void(0)">
+            <div class="icon">
+              <img src="./image/social_facebook.JPG" alt="facebook" class="icon_facebook">
+            </div>
+          </a>
+          <a href="javascript:void(0)">
+            <div class="icon">
+              <img src="./image/social_youtube.JPG" alt="youtube" class="icon_youtube">
+            </div>
+          </a>
         </article>
         <article class="apps">
-          <div class="app">
-            <img src="" alt="googleplay">
-          </div>
-          <div class="app">
-            <img src="" alt="appstore">
-          </div>
+          <a href="javascript:void(0)">
+            <div class="app">
+              <img src="./image/social_google.JPG" alt="google">
+              <p>google play</p>
+            </div>
+          </a>
+          <a href="javascript:void(0)">
+            <div class="app">
+              <img src="./image/social_app.JPG" alt="app">
+              <p>app store</p>
+            </div>
+          </a>
+          
+          
         </article>
       </section>
 
       <section class="middle">
-        <article class="middle__text"></article>
-        <article class="middle__image"></article>
+        <article class="middle__contents">
+          <ul class="menu">
+            <li><a href="javascript:void(0)">회사소개</a></li>
+            <li><a href="javascript:void(0)">인재채용</a></li>
+            <li><a href="javascript:void(0)">제휴제안</a></li>
+            <li><a href="javascript:void(0)">이용약관</a></li>
+            <li><a href="javascript:void(0)">고객센터</a></li>
+            <li><a href="javascript:void(0)" class="underline">개인정보처리방침</a></li>
+          </ul>
+
+          <div class="middle__image">
+            <img src="./image/mai10_입체 당근이.png" alt="">
+          </div>
+        </article>
+        
       </section>
 
-      <section class="bottom"></section></div>
+      <section class="bottom">
+        <div class="information">
+          <span>사업자등록번호 82-2644-6495</span>
+          <span>우리동네 하루마켓</span>
+          <span>개인정보책임자: 채화진 chaehj91@gmail.com</span>
+        </div>
+        <p class="copyright">
+          &copy; <span class="this-year"></span>
+          My local Oneday-market. All rights reserved.
+        </p>
+      </section>
+    
+    </div>
     
   </footer>
   
