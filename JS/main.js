@@ -50,7 +50,16 @@ new Swiper('main .local_star_market .star_market .swiper', {
   autoplay: true,
   slidesPerView: 3.5,
   spaceBetween: 20,
+
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  },
+  
 });
+
+
 
 const badgeEl = document.querySelector('header .badges');
 window.addEventListener('scroll', function () {
