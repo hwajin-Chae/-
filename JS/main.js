@@ -22,7 +22,6 @@ new Swiper('main .local_star_market .slide_right .swiper', {
   autoplay: true,
 });
 
-
 const headerEl = document.querySelector('header');
   const mainMenuEl = document.querySelector('nav.gnb > .main-menu');
   const subMenuEls = document.querySelectorAll('nav.gnb .sub-menu');
@@ -45,15 +44,30 @@ const headerEl = document.querySelector('header');
     });
   })
 
-
 new Swiper('main .local_star_market .star_market .swiper', {
-  
   direction: 'horizontal',
   loop: true,
   autoplay: true,
   slidesPerView: 3.5,
   spaceBetween: 20,
 });
+
+const badgeEl = document.querySelector('header .badges');
+window.addEventListener('scroll', function () {
+  if (window.scrollY > 600) {
+    gsap.to(badgeEl, 0.6, {
+      opacity: 0,
+      display: 'none'
+    });
+  } else {
+    gsap.to(badgeEl, 0.6, {
+      opacity: 1,
+      display: 'block'
+    });
+  }
+});
+
+AOS.init();
 
 const thisYear = document.querySelector('.this-year');
 thisYear.textContent = new Date().getFullYear();
