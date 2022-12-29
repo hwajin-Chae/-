@@ -55,8 +55,13 @@ new Swiper('main .local_star_market .star_market .swiper', {
     el: '.swiper-pagination',
     type: 'bullets',
     clickable: true,
+
+  breakpointes: {
+    768: {
+      slidesPerView: 1,
+    }
+  }
   },
-  
 });
 
 
