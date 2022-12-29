@@ -8,7 +8,6 @@ header {
   width: 100%;
   height: 80px;
   background-color: #FFD54F;
-  opacity: 0.9;
   position: fixed;
   z-index: 99;
   top: 0;
@@ -221,7 +220,7 @@ main > .local_market_map {
 main > .local_market_map > .inner {
   /* width: 1200px; */
   height: 680px;
-  /* background-color: pink; */
+  background-color: pink;
   margin-top: 40px;
   display: flex;
   flex-direction: column;
@@ -232,7 +231,7 @@ main > .local_market_map > .inner > .container {
   width: 1050px;
   height: 450px;
   /* margin-top: -120px; */
-  /* background-color: lightgreen; */
+  background-color: lightgreen;
   display: flex;
   justify-content: space-around;
 }
@@ -240,7 +239,7 @@ main > .local_market_map > .inner > .container {
 main > .local_market_map > .inner > .container > .container-lt > .contents {
   width: 350px;
   height: 80px;
-  /* background-color: lightgray; */
+  background-color: lightgray;
   display: flex;
   justify-content: space-between;
 }
@@ -278,7 +277,7 @@ main > .local_market_map > .inner > .container > .container-lt > .contents .btn-
 main > .local_market_map > .inner > .container > .container-lt > .market {
   width: 350px;
   height: 320px;
-  /* background-color: darkkhaki; */
+  background-color: darkkhaki;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -334,7 +333,7 @@ main > .local_market_map > .inner .market_map {
   height: 450px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  /* background-color: orange; */
+  background-color: orange;
   background-image: url(../image/main01_지도.JPG);
   background-size: cover;
   position: relative;
@@ -633,13 +632,12 @@ main > .local_star_market > .star_market > .inner {
   display: flex;
   position: relative;
 }
-main > .local_star_market > .star_market > .inner > .character img {
-  width: 300px;
+main > .local_star_market > .star_market > .inner > .star_market__contents > .character img {
+  width: 400px;
+  height: 400px;
   position: absolute;
-  left: 230px;
-}
-main > .local_star_market > .star_market > .inner .zoom-out-right {
-  opacity: 0;
+  left: -300px;
+  top: -160px;
 }
 main > .local_star_market > .star_market > .inner > .star_market__contents {
   width: 1000px;
@@ -649,6 +647,11 @@ main > .local_star_market > .star_market > .inner > .star_market__contents {
   border: 1px dashed dodgerblue;
   padding: 0 50px 0 50px;
   border-radius: 14px;
+  position: relative;
+}
+main > .local_star_market > .star_market > .inner > .character .zoom-out-right {
+  position: absolute;
+  opacity: 0;
 }
 main > .local_star_market > .star_market > .inner > .star_market__contents > .swiper div.swiper-slide {
   width: 300px;
@@ -818,4 +821,94 @@ footer .bottom {
 }
 footer .bottom > .information span {
   padding: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  header .inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header .gnb {
+    width: 100%;
+    display: none;
+  }
+  header .badge {
+    display: none;
+  }
+  header .gnb > .main-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  header .gnb > li {
+    width: 100%;
+    text-align: center;
+  }
+  header .inner .header-lt {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    width: 100%;
+    display: none;
+  }
+  header .inner .header-rt {
+    display: flex;
+  }
+  header .inner .header-rt .search {
+    width: 30px;
+  }
+
+  main {
+    width: 100%;
+  }
+  main .local_market_map > .inner {
+    width: 90%;
+    height: 600px;
+  }
+  main > .local_market_map > .inner > .container {
+    width: 100%;
+    height: 440px;
+    flex-wrap: wrap;
+  }
+  main > .local_market_map > .inner > .container > .container-lt {
+    display: flex;
+  }
+  main > .local_market_map > .inner > .container > .container-lt > .contents {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+  }
+  main > .local_market_map > .inner > .container > .container-lt #my_location {
+    width: 140px;
+    height: 30px;
+    box-sizing: border-box;
+  }
+  main > .local_market_map > .inner > .container > .container-lt .material-icons {
+    position: absolute;
+    top: 3px;
+    left: 114px;
+  }
+  main > .local_market_map > .inner > .container > .container-lt > .contents .btn-green {
+    width: 140px;
+    height: 30px;
+    box-sizing: border-box;
+  }
+  main > .local_market_map > .inner > .container > .container-lt > .market {
+    width: 284px;
+    height: 80px;
+  }
+  main > .local_market_map > .inner > .container > .container-lt .market__content_01 {
+    width: 100%;
+    height: 80px;
+    padding: 5px 10px;
+  }
+  main > .local_market_map > .inner > .container > .container-lt .market__content_02 {
+    display: none;
+  }
+  main > .local_market_map > .inner > .container > .container-lt .market__content_03 {
+    display: none;
+  }
+  main > .local_market_map > .inner .market_map {
+    width: 100%;
+    height: 320px;
+  }
 }
