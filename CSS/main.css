@@ -99,6 +99,7 @@ header > .top-header .header-rt > .btn-search > input {
   background-color: #fff;
   border: 2px solid #FFB038;
   border-radius: 5px;
+  padding: 0 5px 0 5px;
   outline: none;
 }
 header > .top-header .header-rt > .btn-search {
@@ -222,7 +223,7 @@ main > .local_market_map {
 main > .local_market_map > .inner {
   /* width: 1200px; */
   height: 680px;
-  background-color: pink;
+  /* background-color: pink; */
   margin-top: 40px;
   display: flex;
   flex-direction: column;
@@ -233,7 +234,7 @@ main > .local_market_map > .inner > .container {
   width: 1050px;
   height: 450px;
   /* margin-top: -120px; */
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   display: flex;
   justify-content: space-around;
 }
@@ -241,7 +242,7 @@ main > .local_market_map > .inner > .container {
 main > .local_market_map > .inner > .container > .container-lt > .contents {
   width: 350px;
   height: 80px;
-  background-color: lightgray;
+  /* background-color: lightgray; */
   display: flex;
   justify-content: space-between;
 }
@@ -279,7 +280,7 @@ main > .local_market_map > .inner > .container > .container-lt > .contents .btn-
 main > .local_market_map > .inner > .container > .container-lt > .market {
   width: 350px;
   height: 320px;
-  background-color: darkkhaki;
+  /* background-color: darkkhaki; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -438,7 +439,7 @@ main > .market_submit .slide_right > .swiper .swiper-slide > a {
 main section.inner {
   /* width: 100%; */
   /* height: 680px; */
-  background-color: pink;
+  /* background-color: pink; */
   /* margin: 0 auto; */
   margin-top: 60px;
   margin-right: 10px;
@@ -448,7 +449,7 @@ main section.inner {
 main section.inner > .youtube {
   width: 800px;
   height: 500px;
-  background-color: cyan;
+  /* background-color: cyan; */
 }
 /* *** youtube *** */
 .youtube {
@@ -468,7 +469,7 @@ main section.inner > .youtube {
 main .inner > .report {
   width: 550px;
   height: 500px;
-  background-color: azure;
+  /* background-color: azure; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -480,7 +481,7 @@ main .inner > .report > .zoom-in-down > h1 {
 main .inner .submit__contents {
   width: 500px;
   height: 200px;
-  background-color: lightgrey;
+  /* background-color: lightgrey; */
   position: relative;
 }
 main .inner .submit__contents .btn-green {
@@ -630,13 +631,13 @@ main > .local_star_market > .star_market > .inner {
   height: 600px;
   margin: 0 auto;
   margin-top: 90px;
-  background-color: pink;
+  /* background-color: pink; */
   display: flex;
   position: relative;
 }
 main > .local_star_market > .star_market > .inner > .star_market__contents > .swiper {
   height: 410px;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 
@@ -832,8 +833,12 @@ footer .bottom {
 footer .bottom > .information span {
   padding: 5px;
 }
+footer .bottom > .information a {
+  color: #000;
+}
 
 
+/* ******************************************************************* */
 /* 반응형 작업 시작 */
 
 @media screen and (max-width: 1024px) {

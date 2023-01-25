@@ -57,7 +57,7 @@ new Swiper('main .local_star_market .star_market .swiper', {
     clickable: true,
 
   breakpoints: {
-    768: {
+    765: {
       slidesPerView: 1,
     },
   }
