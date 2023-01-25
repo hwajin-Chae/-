@@ -56,10 +56,10 @@ new Swiper('main .local_star_market .star_market .swiper', {
     type: 'bullets',
     clickable: true,
 
-  breakpointes: {
+  breakpoints: {
     768: {
       slidesPerView: 1,
-    }
+    },
   }
   },
 });
